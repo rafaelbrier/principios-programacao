@@ -31,11 +31,11 @@ Cada **responsabilidade** deve ser uma **classe**, porque uma responsabilidade �
 A classe abaixo possui três responsabilidades, ou seja, ela tem três razões para ser modificada. Modificar uma das funcionalidades
 pode impactar em outras não relacionadas.
 
-![alt text](images/solid1.png)
+![alt text](images/solid1.PNG)
 
 O correto seria criar três classes, cada qual com uma única responsabilidade.
 
-![alt text](images/solid2.png)
+![alt text](images/solid2.PNG)
 
 ### 2.1 Príncipio Aberto-Fechado (OCP) - [O]
 
@@ -53,7 +53,7 @@ Quando aprendemos sobre orientação a objetos com certeza ouvimos sobre abstra�
 
 Observe a classe:
 
-![alt text](images/solid3.png)
+![alt text](images/solid3.PNG)
 
 É uma classe de débito em conta que valida o tipo da conta para aplicar a regra de negócio correta para conta corrente e para conta poupança. Agora vamos supor que surgiu um novo tipo de débito em conta (conta investimento), logo seria necessário modificar a classe.
 
@@ -63,7 +63,7 @@ Além de ter que testar todos os tipos de débito em conta, um bug introduzido n
 
 O correto seria usar abstração para gerar extensibilidade:
 
-![alt text](images/solid4.png)
+![alt text](images/solid4.PNG)
 
 Veja que possuímos agora uma abstração bem definida, onde todas as extensões implementam suas próprias regras de negócio sem necessidade de modificar uma funcionalidade devido mudança ou inclusão de outra.
 
